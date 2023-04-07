@@ -47,14 +47,18 @@ void instructions(int gen, int pause, int waitTime)
     printf("REGLES : \n");
     printf("- Si une cellule vivante a 2 ou 3 voisines vivantes, elle reste vivante a la prochaine etape.\n");
     printf("- Si une cellule morte a exactement 3 voisines vivantes, elle devient vivante a la prochaine etape.\n\n");
+    printf("Les cotés de la grille sont liés afin de permettre plus de possibilités de simulation.\n\n");
 
     if (pause == 1)
     {
         printf("Cliquez sur les cellules blanches pour les rendre vivantes et sur les cellules noires pour les faire mourir.\n");
         printf("Appuyez sur R pour avoir une grille aleatoire.\n");
-        printf("Appuyez sur RETOUR pour vider la grille.");
-        printf("Appuyez sur ESPACE pour lancer le jeu.");
+        printf("Appuyez sur P pour faire une ligne de planeurs.\n");
+        printf("Appuyez sur RETOUR pour vider la grille.\n");
+        printf("Appuyez sur ESPACE pour lancer le jeu.\n");
+        printf("Appuyez sur ECHAP pour quitter le jeu.");
     } else {
+        printf("Mettez le jeu en pause afin de modifier la grille.\n\n");
         printf("Appuyez sur ESPACE pour mettre en pause le jeu.\n");
         printf("Appuyez sur FLECHE DROITE ou FLECHE GAUCHE pour modifier la vitesse de la simulation.");
     }
@@ -141,6 +145,20 @@ void freeMemory(int** grid)
     }
     free(grid);
 }
+
+// ----------------------------- Fonction creer planeurs ----------------------------- //
+void createGliders(int** grid)
+{
+    for (i = 1; i < GRID_ROWS+20; i+=5)
+    {
+        grid[40][i] = 1;
+        grid[40][i+1] = 1;
+        grid[40][i-1] = 1;
+        grid[41][i-1] = 1;
+        grid[42][i] = 1;
+    }
+}
+
 
 // ---------------------------------------------------------------------------------------------------------------------- //
 // -------------------------------------------------------- MAIN -------------------------------------------------------- //
@@ -239,6 +257,17 @@ int main( int argc, char* args[] )
                                 }
                             }
                             generation = 0;
+                        }
+
+                        // ligne de Planeur
+                        if (e.key.keysym.sym == SDLK_p) {
+                            createGliders(grid);
+                            generation = 0;
+                        }
+
+                        // Quitter
+                        if (e.key.keysym.sym == SDLK_ESCAPE) {
+                            running = 0;
                         }
 
 

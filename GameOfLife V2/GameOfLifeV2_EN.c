@@ -49,14 +49,18 @@ void instructions(int gen, int pause, int waitTime)
     printf("- Any living cell with two or three living neighbours lives on to the next generation.\n");
     printf("- Any living cell with more than three living neighbours dies, as if by overpopulation.\n");
     printf("- Any dead cell with exactly three living neighbours becomes a living cell, as if by reproduction.\n\n");
+    printf("The sides of the grid are linked to allow more possibilities.\n\n");
 
     if (pause == 1)
     {
         printf("Click on the white cells to make them live and on the black cells to kill them.\n");
         printf("Press R to get a random pattern.\n");
+        printf("Press P to create a row of gliders.\n");
         printf("Press BACKSPACE to empty the grid.\n");
-        printf("Press SPACE to play.");
+        printf("Press SPACE to play.\n");
+        printf("Press ESCAPE to quit.\n");
     } else {
+        printf("The game have to be paused to allow any changes to the grid.\n\n");
         printf("Press SPACE to pause the game.\n");
         printf("Press RIGHT or LEFT to change the simulation speed.");
     }
@@ -142,6 +146,19 @@ void freeMemory(int** grid)
         free(grid[i]);
     }
     free(grid);
+}
+
+// ----------------------------- Fonction creer planeurs ----------------------------- //
+void createGliders(int** grid)
+{
+    for (i = 1; i < GRID_ROWS+20; i+=5)
+    {
+        grid[40][i] = 1;
+        grid[40][i+1] = 1;
+        grid[40][i-1] = 1;
+        grid[41][i-1] = 1;
+        grid[42][i] = 1;
+    }
 }
 
 // ---------------------------------------------------------------------------------------------------------------------- //
@@ -241,6 +258,18 @@ int main( int argc, char* args[] )
                                 }
                             }
                             generation = 0;
+                        }
+
+                        // ligne de Planeur
+                        if (e.key.keysym.sym == SDLK_p) {
+                            createGliders(grid);
+                            generation = 0;
+                        }
+
+                        // Quitter
+                        if (e.key.keysym.sym == SDLK_ESCAPE) {
+                            running = 0;
+                            
                         }
 
 

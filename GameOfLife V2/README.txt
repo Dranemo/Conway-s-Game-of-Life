@@ -4,6 +4,9 @@ It was coded by Yanaël CAILLOT and Melvin GUELLAF as part of a school project f
 
 The instructions are on the console and the game is on the graphic interface.
 
+The sides of the grid are linked to allow more possibilities.
+The game have to be paused to allow any changes to the grid.
+
 The rules are :
     - Any living cell with fewer than two living neighbours dies, as if by underpopulation.
     - Any living cell with two or three living neighbours lives on to the next generation.
@@ -13,6 +16,7 @@ The rules are :
 And the commands are :
     - Click on the white cells to make them live and on the black cells to kill them.
     - Press SPACE to play or pause the game.
+    - Press ESCAPE to quit. (When paused)
     - Press R to get a random pattern. (When paused)
     - Press BACKSPACE to empty the grid. (When paused)
     - Press RIGHT or LEFT to change the simulation speed. (When played)
