@@ -2,6 +2,9 @@
 
 **[Download Link](https://drive.google.com/file/d/1nqGOcpHhisH1OCa-BApJBaaq-Imd29n0/view?usp=sharing)**
 
+
+
+
 ## Table of Content
 
 1. [Francais](#Francais)
@@ -11,6 +14,9 @@
    1. [Rules](#RulesEn)
    2. [Commands](#ComEn)
 3. [Credits](#Credits)
+
+
+
 
 ## Francais <a name="Francais"></a>
 
@@ -25,12 +31,16 @@ Ce jeu est basé sur le *Jeu de la Vie de Conway* créé en 1970.
 Les cotés de la grille sont liés afin de permettre plus de possibilités de simulation.  
 Le jeu doit être en pause afin de modifier la grille.
 
+
+
 ### Règles <a name="RulesFr"></a>
 
 - Si une cellule vivante a moins de 2 voisines vivantes, elle meurt à la prochaine étape.
 - Si une cellule vivante a 2 ou 3 voisines vivantes, elle reste vivante a la prochaine etape.
 - Si une cellule vivante a plus de 3 voisines vivantes, elle meurt à la prochaine étape.
 - Si une cellule morte a exactement 3 voisines vivantes, elle devient vivante a la prochaine etape.
+
+
 
 ### Commandes <a name="ComFr"></a>
 
@@ -43,12 +53,13 @@ Le jeu doit être en pause afin de modifier la grille.
 - Appuyez sur FLECHE DROITE ou FLECHE GAUCHE pour modifier la vitesse de la simulation.
 
 
+
+
 ## English <a name="Anglais"></a>
 
 ***Project completed in one week as part of my studies at [Gaming Campus](https://gamingcampus.fr) in April 2023.***  
 Project implemented in **C with SDL**.  
 *Currently not continued.*
-
 
 This game is based on *the Conway's Game Of Life* created in 1970.
 
@@ -57,12 +68,16 @@ This game is based on *the Conway's Game Of Life* created in 1970.
 The sides of the grid are linked to allow more possibilities.  
 The game have to be paused to allow any changes to the grid.  
 
+
+
 ### Rules <a name="RulesEn"></a>
 
 - Any living cell with fewer than two living neighbours dies, as if by underpopulation.
 - Any living cell with two or three living neighbours lives on to the next generation.
 - Any living cell with more than three living neighbours dies, as if by overpopulation.
 - Any dead cell with exactly three living neighbours becomes a living cell, as if by reproduction.
+
+
 
 ### Commands <a name="ComEn"></a>
 
@@ -79,5 +94,5 @@ The game have to be paused to allow any changes to the grid.
 
 ## Credits <a name="Credits"></a>
 
-* Caillot Yanaël : [LinkedIn](https://www.linkedin.com/in/ycaillot/) [GitHub](https://github.com/Dranemo)
-* Guellaf Melvin : [LinkedIn](https://www.linkedin.com/in/melvin-guellaff-353628202/) [GitHub](https://github.com/MGuellaf)
+* Caillot Yanaël - [LinkedIn](https://www.linkedin.com/in/ycaillot/) - [GitHub](https://github.com/Dranemo)
+* Guellaf Melvin - [LinkedIn](https://www.linkedin.com/in/melvin-guellaff-353628202/) - [GitHub](https://github.com/MGuellaf)
