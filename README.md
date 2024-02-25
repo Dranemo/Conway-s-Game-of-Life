@@ -23,7 +23,7 @@ Ce jeu est basé sur le *Jeu de la Vie de Conway* créé en 1970.
 Les cotés de la grille sont liés afin de permettre plus de possibilités de simulation.  
 Le jeu doit être en pause afin de modifier la grille.
 
-### Règles <a name="RulesFr></a>
+### Règles <a name="RulesFr"></a>
 
 - Si une cellule vivante a moins de 2 voisines vivantes, elle meurt à la prochaine étape.
 - Si une cellule vivante a 2 ou 3 voisines vivantes, elle reste vivante a la prochaine etape.
