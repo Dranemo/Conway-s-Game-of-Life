@@ -8,12 +8,13 @@
 ## Table of Content
 
 1. [Francais](#Francais)
-   1. [Regles](#RulesFR)
+   1. [Regles](#RulesFr)
    2. [Commandes](#ComFr)
 2. [English](#Anglais)
    1. [Rules](#RulesEn)
    2. [Commands](#ComEn)
 3. [Credits](#Credits)
+4. [License](#License)
 
 
 
@@ -96,3 +97,7 @@ The game have to be paused to allow any changes to the grid.
 
 * Caillot Yanaël - [LinkedIn](https://www.linkedin.com/in/ycaillot/) - [GitHub](https://github.com/Dranemo)
 * Guellaf Melvin - [LinkedIn](https://www.linkedin.com/in/melvin-guellaff-353628202/) - [GitHub](https://github.com/MGuellaf)
+
+  
+## License <a name="License"></a>
+We are the owner of this project. You are permitted to view and execute this code for evaluation or demonstration purposes only. Any modification, distribution, or commercial use is prohibited without our explicit permission.
