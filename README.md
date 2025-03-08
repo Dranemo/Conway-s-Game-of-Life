@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-**[Download Link](https://drive.google.com/file/d/155dOS_pSBD2x5BxkeQO2rM53mPhO-HNa/view?usp=sharing)**
+**[Download Link](https://github.com/Dranemo/Releases/releases/tag/GameOfLifeC)**
 
 
 
